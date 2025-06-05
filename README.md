@@ -11,6 +11,19 @@ This script processes and scores buyer leads based on product and keyword associ
 - Deduplicates entries based on row completeness
 - Calculates a custom cornstarch relevance score based on keyword matching.
 
+
+
+### Requirements
+
+- Python 3.7+
+- pandas
+- pytest
+
+Install with:
+
+```bash
+python3 -m pip install -r requirements.txt
+
 ## How to Run
 
 ```bash
