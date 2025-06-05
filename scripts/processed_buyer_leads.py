@@ -205,5 +205,10 @@ if __name__ == "__main__":
     df = deduplicate_by_row_completeness(df)
     df['cornstarch_score'] = df.apply(cornstarch_score, axis=1)
     df = df.sort_values(by='cornstarch_score', ascending=False)
+    
 
-    print(df)
+    # Export to CSV
+    output_path = Path(__file__).parent / 'cornstarch_output.csv'
+    df.to_csv(output_path, index=False)
+
+    print(f"Exported cleaned data to: {output_path}")
