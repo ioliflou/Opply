@@ -3,17 +3,18 @@ import csv
 import re
 from collections import defaultdict
 import pandas as pd
+from pathlib import Path
 
-directory = '/Users/user/Documents/Opply/processed_buyer_leads.json'
+DATA_PATH = Path(__file__).parent.parent / 'data' / 'processed_buyer_leads.json'
 
 
-def read_json_file(filepath):
+def read_json_file(DATA_PATH):
 
     """
     Open JSON file and read through the data.
     """
 
-    with open(filepath, 'r', encoding='utf-8') as file:
+    with open(DATA_PATH, 'r', encoding='utf-8') as file:
         content = file.read()            
     try:
         dataframe = json.loads(content)
