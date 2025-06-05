@@ -14,4 +14,6 @@ This script processes and scores buyer leads based on product and keyword associ
 ## How to Run
 
 ```bash
-python scripts/process_buyer_leads.py
+python3 scripts/process_buyer_leads.py
+python3 -m pytest tests/
+
