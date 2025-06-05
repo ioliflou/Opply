@@ -25,7 +25,7 @@ python3 -m pip install -r requirements.txt
 
 
 
-```bash
+
 python3 scripts/process_buyer_leads.py
 python3 -m pytest tests/
 
