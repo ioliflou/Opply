@@ -5,10 +5,14 @@
 
 You should update the top of your script for portability and clarity:
 
-```python
+```python3
 import json
 import pandas as pd
 from pathlib import Path
+
+
+python3 -m pip install -r requirements.txt
+
 
 # Path to data
 DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "processed_buyer_leads.json"
