@@ -1,1 +1,14 @@
 
+---
+
+### 📄 Updated `process_buyer_leads.py` (with cleanup and paths)
+
+You should update the top of your script for portability and clarity:
+
+```python
+import json
+import pandas as pd
+from pathlib import Path
+
+# Path to data
+DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "processed_buyer_leads.json"
