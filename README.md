@@ -13,18 +13,17 @@ This script processes and scores buyer leads based on product and keyword associ
 
 
 
-### Requirements
+### Requirements and how to run
 
 - Python 3.7+
 - pandas
 - pytest
 
-Install with:
 
 ```bash
 python3 -m pip install -r requirements.txt
 
-## How to Run
+
 
 ```bash
 python3 scripts/process_buyer_leads.py
